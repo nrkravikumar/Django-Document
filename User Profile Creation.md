@@ -22,6 +22,7 @@
     - salary with FloatField consisting with max_length = 10
     - user with OneToOneField consisting of User model class involving on_delete=models.CASCADE
   - Finally we created a model class with some fields as shown below
+    #### ```models.py```
     ``` python
     from django.db import models
     from django.contrib.auth.models import User
