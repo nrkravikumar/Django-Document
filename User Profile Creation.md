@@ -54,7 +54,7 @@
      <img src="modelcreation.JPG" alt="migration command" height="280px" width="100%">
      <img src="migrate.JPG" alt="migrate command" height="280px" width="100%">
      
-   - After making migrations and migrate we can observe the tablenames with fields in **phpmyadminwith** as shown below 
+   - After making migrations and migrate we can observe the tablenames with fields in **phpmyadmin** with as shown below 
      #### ```Screenshot of model class with field names```
  
  
