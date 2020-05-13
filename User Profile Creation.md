@@ -37,6 +37,18 @@
 > **OneToOneField**: single user has to insert his/her details for single time insertion in a table
 
 > **on_delete=models.CASCADE**: Here we are removing entire record of a particular user from a table that should not exist in a table after removing a user. Suppose we are not using on_delete then the record in only User table is to be removed remaining table consisting of particular user values are exists so for that rectification we are using on_delete for removing not existing users values in tables.
+
+### ```models.py screenshot```
+<img src="models.JPG" alt="manage.py" height="280px" width="100%">
+
+   - After implementing model fields in models.py we need to do ```makemigrations``` because the fields we are creating for a particular table that can be viewed in the migrations folder with 0001.py files or how many times the migrations are done that can be increased with some numbering in it. If we need to check the fields with types that can be viewed in it.
+   - Making migrations it can't effects database for creating a table with fields. So we need to do ```migrate``` here the table and fields are to be created in database that is implemented in models by user.
+   - Here we are using model as **Profile_details** as tablename but the table name can be created as **database_modelclassname** it can be created like databasename with modelclassname.
+  #### ```Command Prompt```
+  ``` python
+  python manage.py makemigrations 
+  python manage.py migrate
+  ```
 ---
 ### Creation of Form:
     
