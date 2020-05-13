@@ -49,9 +49,10 @@
  python manage.py makemigrations 
  python manage.py migrate
  ```
- #### ```Scrennshot of migrations and migrate```
+ #### ```Screenshot of migrations and migrate```
  <img src="modelcreation.JPG" alt="migration command" height="280px" width="100%">
  
+ <img src="migrate.JPG" alt="migrate command" height="280px" width="100%">
 ---
 ### Creation of Form:
     
