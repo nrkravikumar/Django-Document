@@ -44,11 +44,14 @@
    - After implementing model fields in models.py we need to do ```makemigrations``` because the fields we are creating for a particular table that can be viewed in the migrations folder with 0001.py files or how many times the migrations are done that can be increased with some numbering in it. If we need to check the fields with types that can be viewed in it.
    - Making migrations it can't effects database for creating a table with fields. So we need to do ```migrate``` here the table and fields are to be created in database that is implemented in models by user.
    - Here we are using model as **Profile_details** as tablename but the table name can be created as **database_modelclassname** it can be created like databasename with modelclassname.
-  #### ```Command Prompt```
-  ``` python
-  python manage.py makemigrations 
-  python manage.py migrate
-  ```
+#### ```Command Prompt```
+``` python
+ python manage.py makemigrations 
+ python manage.py migrate
+ ```
+ #### ```Scrennshot of migrations and migrate```
+ <img src="modelcreation.JPG" alt="migration command" height="280px" width="100%">
+ 
 ---
 ### Creation of Form:
     
