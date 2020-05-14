@@ -146,4 +146,5 @@
    - In the above figure we can observe thar each user has id these id's are to be linking with another table(i.e., profile_details) so in profile_details table can be interlinked with user_id as discussed earlier from user table ids are exists only one time in the profiledetails table it doesnt repeats for again see the below figure for profieldetails table screenshot.
      #### ```Screenshot of profiledetails table``` 
      <img src="profiletable.JPG" alt="profiletable" height="280px" width="100%">
-    ---
+    
+  ---
