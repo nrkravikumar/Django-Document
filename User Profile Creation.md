@@ -158,4 +158,5 @@
    - Already we are aware of the profiledetails fields here the output is not displayed because the user didnt insert the record fields so after updation the details such as age is displayed in the age area.
      #### ```Screenshot of inserting the value to profile details field```
      <img src="profileoutput.JPG" alt="profileoutput" height="280px" width="100%">
+   - Atlast we got output for the age field so the onetoonefield for profile is created then we can proceed for update of a user fields. So we need to enter or insert one record for these profile details table then we can update those data fields in the table. Now we can proceed for imageuploads,date of birth etc., fields to profile details table. 
   ---
