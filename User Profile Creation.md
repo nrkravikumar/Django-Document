@@ -118,5 +118,15 @@
      #### ```views.py```
      ```python
      def profiledetails(request,id):
-        
+        ob = User.objects.get(id=id)
+        if request.method == "POST":
+            m = ProfileForm(request.POST)
+            if m.is_valid():
+                sob = m.save(commit=False)
+                sob.user_id = ob.id
+                sob.save()
+                return redirect("home/")
+        m = ProfileForm()
+        return render(request,'userprofile/profile.html',{'pf':m})
+     ```        
    
