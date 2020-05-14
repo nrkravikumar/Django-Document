@@ -151,6 +151,11 @@
      <img src="profiletable.JPG" alt="profiletable" height="280px" width="100%">
    - The values are to be displayed in the homepage of user when user is updated. So the code for displaying the second table details that is profile_details is as shown in the below figure.
      #### ```Screenshot of home page```
-     
-   
+     <img src="homepage.JPG" alt="homepage" height="280px" width="100%">
+   - So here we are linking from the first table so that we are using the first tablename with secondtable then it displays those details in the required area.
+     #### ```Screenshot of home page with profiledetails fields```
+     <img src="homeoutput.JPG" alt="homeoutput" height="280px" width="100%">
+   - Already we are aware of the profiledetails fields here the output is not displayed because the user didnt insert the record fields so after updation the details such as age is displayed in the age area.
+     #### ```Screenshot of inserting the value to profile details field```
+     <img src="">
   ---
