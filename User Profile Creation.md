@@ -62,14 +62,14 @@
  
 ---
 ### Creation of Form:
-   - While model creation is done in mysql then we are proceeding for ```form creation``` whatever the fields that we are going to display and to enter the values to the tables in particular field.
-   - We are aware of creating a form in our app that is created previously so in that we are going to create a new class (i.e., as userdefined names here we are creating the form name as **ProfileForm**) for our newly created model class.
-   - Before proceeding to create a class for userdefined form first we need to import the created model class to here for importing the model from model to form we are using ```from django.models import ModelForm``` so here whatever the model we are giving for that we are creating a form so we need to import the ```ModelForm```
-   - After importing we need to import the model class also for which model we are going to create a form. so for accessing that model we are importing as ```from userapp.models import modelname``` here the userapp is your app name whatever we had created previously and the model class name is just created in the ```models.py``` file.
+   - While model creation is done in mysql then we are proceeding for ```form creation``` whatever the fields that we are going to display and to enter the values to a tables in particular field.
+   - We are aware of creating a form in our app that is created previously so in that we are creating a new class (i.e., as userdefined names here we are creating the form name as **ProfileForm**) for our newly created model class.
+   - Before proceeding to create a class for userdefined form first we need to import the created model class to here for importing the model from models.py for that we are using ```from userprofile.models import Profile_details``` so here whatever the model we are giving for that we are creating a form so we need to import the ```ModelForm```
+   - After importing we need to import the model class also for which model we are going to create a form. so for accessing that form we are importing form class to display a particular field by using model names so the form for creating modelsform as ```from django.forms import ModelForm```. By this class form we can create a user defiend form values that is to be displayed in .html file
    - Finally the importing in forms.py looks like below.
      #### ```Importing model and modelform in forms.py``` 
      ``` python
-     from django.models import ModelForm
+     from django.forms import ModelForm
      from userprofile.models import Profile_details
      ```
    - So we need to create a userform class for inputting the specified values to models.
@@ -106,7 +106,7 @@
      from django.contrib.auth.models import User
      ```
    - From importing we already imported the userform(i.e., Uform) that is already imported previously so we are including along with same path for importing the **ProfileForm** to display it in .html file and to post the data to a model.
-     #### ``` Screenshot of importing model and form class in views.py```
+     #### ```Screenshot of importing model and form class in views.py```
      <img src="viewsimport.JPG" alt="viewsimporting" height="280px" width="100%">
-    
+   - Now we are going to create a function (i.e., 
    
