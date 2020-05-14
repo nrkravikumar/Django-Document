@@ -67,13 +67,13 @@
    - Before proceeding to create a class for userdefined form first we need to import the created model class to here for importing the model from model to form we are using ```from django.models import ModelForm``` so here whatever the model we are giving for that we are creating a form so we need to import the ```ModelForm```
    - After importing we need to import the model class also for which model we are going to create a form. so for accessing that model we are importing as ```from userapp.models import modelname``` here the userapp is your app name whatever we had created previously and the model class name is just created in the ```models.py``` file.
    - Finally the importing in forms.py looks like below.
-     #### ```forms.py``` 
+     #### ```Importing model and modelform forms.py``` 
      ``` python
      from django.models import ModelForm
      from userprofile.models import Profile_details
      ```
    - So we need to create a userform class for inputting the specified values to models.
-     #### ```forms.py```
+     #### ```Form class creation forms.py```
      ``` python
      class ProfileForm(ModelForm):
          class Meta:
