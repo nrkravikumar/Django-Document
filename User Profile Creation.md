@@ -82,8 +82,8 @@
      ```
    - In above code implementation we are not using **id** and **user_id** because it ishould be automatically set to their default states such as **id** is primary key in the table and **user_id** is foreign key that should be inserted automatically when specific user is logged into their profile. 
    - We are not using **__ all __** because we should not enter the id and user_id field values if we are assiging as **__ all __** in fields we need to select the user when the form is displaying. so it creates a duplicates for all the users so we can't specify user details when searching in database tables.
-   - Finally the forms.py looks like below shown figure
+   - Finally the forms.py looks like shown below.
      #### ```forms.py```
-      
+      <img src="forms.JPG" alt="forms" height="280px" width="100%"> 
     
   
