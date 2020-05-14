@@ -67,13 +67,13 @@
    - Before proceeding to create a class for userdefined form first we need to import the created model class to here for importing the model from model to form we are using ```from django.models import ModelForm``` so here whatever the model we are giving for that we are creating a form so we need to import the ```ModelForm```
    - After importing we need to import the model class also for which model we are going to create a form. so for accessing that model we are importing as ```from userapp.models import modelname``` here the userapp is your app name whatever we had created previously and the model class name is just created in the ```models.py``` file.
    - Finally the importing in forms.py looks like below.
-     #### ```Importing model and modelform forms.py``` 
+     #### ```Importing model and modelform in forms.py``` 
      ``` python
      from django.models import ModelForm
      from userprofile.models import Profile_details
      ```
    - So we need to create a userform class for inputting the specified values to models.
-     #### ```Form class creation forms.py```
+     #### ```Form class creation in forms.py```
      ``` python
      class ProfileForm(ModelForm):
          class Meta:
@@ -90,7 +90,7 @@
    - After completing the ```models.py``` and ```forms.py``` we are going to implement URL for which url we are accessing the form. so previuosly we are aware of creating a url for other models or functions to redirect through .htmls first we need to pass url for particular function that can be performing with some operations.
      #### ```urls.py```
      ``` python
-     path('profile/',views.profiledetails,name="profile")
+     path('profile/',views.profiledetails,name="profile"),
      ```
    - In url path we know the path parameters such as first parameter is url that can be typed in browser to view second parameter is function that can be implemented in ```views.py``` and the last parameter is name that can be accessed wherever the url should be called for redirection.
    - finally the ```urls.py``` will be looks like shown below
