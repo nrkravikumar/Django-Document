@@ -1,8 +1,8 @@
 ## User Profile Creation by using OneToOneField
   - Creation of Model
   - Creation of Form
-  - Creation of Function
   - Creation of URL
+  - Creation of Function
   - Creation of .html
 ---
 ### Creation of Model:
@@ -85,5 +85,13 @@
    - Finally the forms.py looks like shown below.
      #### ```forms.py```
       <img src="forms.JPG" alt="forms" height="280px" width="100%"> 
-    
-  
+  ---  
+  ### Creation of URLs:
+   - After completing the ```models.py``` and ```forms.py``` we are going to implement URL for which url we are accessing the form. so previuosly we are aware of creating a url for other models or functions to redirect through .htmls first we need to pass url for particular function that can be performing with some operations.
+    #### ```urls.py```
+    ``` python
+    path('profile/',views.profiledetails,name="profile")
+    ```
+   - In url path we know the path parameters such as first parameter is url that can be typed in browser to view second parameter is function that can be implemented in ```views.py``` and the last parameter is name that can be accessed wherever the url should be called for redirection.
+   - finally the ```urls.py``` will be looks like shown below
+   
