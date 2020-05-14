@@ -157,7 +157,7 @@
      <img src="homeoutput.JPG" alt="homeoutput" height="280px" width="100%">
    - Already we are aware of the profiledetails fields here the output is not displayed because the user didnt insert the record fields so after updation the details such as age is displayed in the age area.
      #### ```Screenshot of inserting the value to profile details field```
-     <img src="insertionvalues.JPG" alt="insertionvalue" height="300px" width="100%">
+     <img src="insertionvalues.JPG" alt="insertionvalue" height="340px" width="100%">
    - Final output of user profile with ```OneToOneField```.
      #### ```Screenshot of Final Output in home page```
      <img src="profileoutput.JPG" alt="profileoutput" height="280px" width="100%">
