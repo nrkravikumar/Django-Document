@@ -135,11 +135,12 @@
   ### creation of .html:
    - For creation of .html we know that we are creating .html in templates folder as discussed earlier in the topics so here we are creating .html file inside the templates with userapplication that user is created so here we are assuming the .html(i.e., profile.html) in that we are displaying the form fields as per our discussion earlier in forms.py
      #### ```Screenshot of Profile.html```
-     <img src="">
+     <img src="profilepage.JPG" alt="profilehtmlpage" height="280px" width="100%">
+   - Previous picture states the profile page we are implemented using bootstrap and template language as we know the basic of those here we are not using any label names and form inputs because we are getting those labelnames and input fields through the model form as we mentioned earlier i.e., in ```forms.py```.
+   - We are not giving any action to the form because the form values are to be redirected to the model so this is the logic we are implemented in the ```views.py```
    - The profile.html should be displayed when user is authenticated and then if user has to enter those details for one time and if needed then user has to update those details by user decision.
    - In this page we are displaying only age,phone and salary based on id these values stores in table when user is logged and inserted.
-   - This profile page link can be displayed in navbar of site so while clicking on it it redirects with profile and id with it in url we can observe that profile with id so whoever the user is logged in and clicked the update link it displays it in url of the site.
-     
+   - This profile page link can be displayed in navbar of site so while clicking on it it redirects with profile and id with it in url we can observe that profile with id so whoever the user is logged in and clicked the update link it displays it in url of the site.  
      #### ```Screenshot browser url```
      <img src="browserurl.JPG" alt="browserurl" height="370px" width="100%">
    - After insertion of some data from particular fields that can be inserted into tables in mysql so we can check those fields with id in User table and user_id in profile_details table
@@ -148,5 +149,8 @@
    - In the above figure we can observe thar each user has id these id's are to be linking with another table(i.e., profile_details) so in profile_details table can be interlinked with user_id as discussed earlier from user table ids are exists only one time in the profiledetails table it doesnt repeats for again see the below figure for profieldetails table screenshot.
      #### ```Screenshot of profiledetails table``` 
      <img src="profiletable.JPG" alt="profiletable" height="280px" width="100%">
-    
+   - The values are to be displayed in the homepage of user when user is updated. So the code for displaying the second table details that is profile_details is as shown in the below figure.
+     #### ```Screenshot of home page```
+     
+   
   ---
