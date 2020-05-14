@@ -134,6 +134,8 @@
   ---
   ### creation of .html:
    - For creation of .html we know that we are creating .html in templates folder as discussed earlier in the topics so here we are creating .html file inside the templates with userapplication that user is created so here we are assuming the .html(i.e., profile.html) in that we are displaying the form fields as per our discussion earlier in forms.py
+     #### ```Screenshot of Profile.html```
+     <img src="">
    - The profile.html should be displayed when user is authenticated and then if user has to enter those details for one time and if needed then user has to update those details by user decision.
    - In this page we are displaying only age,phone and salary based on id these values stores in table when user is logged and inserted.
    - This profile page link can be displayed in navbar of site so while clicking on it it redirects with profile and id with it in url we can observe that profile with id so whoever the user is logged in and clicked the update link it displays it in url of the site.
