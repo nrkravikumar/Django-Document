@@ -90,9 +90,22 @@
    - After completing the ```models.py``` and ```forms.py``` we are going to implement URL for which url we are accessing the form. so previuosly we are aware of creating a url for other models or functions to redirect through .htmls first we need to pass url for particular function that can be performing with some operations.
      #### ```urls.py```
      ``` python
-     path('profile/',views.profiledetails,name="profile"),
+     path('profile/<int:id>',views.profiledetails,name="profile"),
      ```
-   - In url path we know the path parameters such as first parameter is url that can be typed in browser to view second parameter is function that can be implemented in ```views.py``` and the last parameter is name that can be accessed wherever the url should be called for redirection.
+   - In url path we know the path parameters such as first parameter is url with specific user id that can be typed in browser to view particular user details second parameter is function that can be implemented in ```views.py``` and the last parameter is name that can be accessed wherever the url should be called for redirection.
    - finally the ```urls.py``` will be looks like shown below
      #### ```Screenshot Urls.py```
      <img src="urls.JPG" alt="urls" height="280px" width="100%">
+  ---
+  ### Creation of Function in Views:
+   - Here we are creating a function in views.py we know that how we are going to create a fucntion in views after completion of creating model in ```models.py``` and form in ```forms.py```.
+   - In views first we need to import our **model class** and **form class** after importing then we can proceed for creating a function because we need to access those model class for getting **id** from User table that is created earlier. Form class is used to insert the values to our model getting from the user end(i.e., entering data in .html file)
+     #### ```Importing model and form class in view.py```
+     ```python
+     from userprofile.forms import Uform,ProfileForm
+     from django.contrib.auth.models import User
+     ```
+   - From importing we already imported the userform(i.e., Uform) that is already imported previously so we are including along with same path for importing the **ProfileForm** to display it in .html file and to post the data to a model.
+     #### ``` Screenshot of importing model and form class in views.py```
+    
+   
