@@ -140,3 +140,5 @@
      
      #### ```Screenshot browser url```
      <img src="browserurl.JPG" alt="browserurl" height="370px" width="100%">
+   - After insertion of some data from particular fields that can be inserted into tables in mysql so we can check those fields with id in User table and user_id in profile_details table
+     #### ```Screenshot of user table and profiledetails table```
