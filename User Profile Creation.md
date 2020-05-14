@@ -114,7 +114,7 @@
    - If the data is valid or not we need to use ```is_valid()``` if it is valid then we are accessing another object to store it because we are storing only "age,phone,salary" including that fields we are assigning the linking from previous table so we already created another field with "OneToOneField" i.e., ```user```.
    - In present table it can creates as user_id for that we are not filling any data to it for that we are pausing the saving data to table. we need to link ```id``` from User table and ```user_id``` from present table then it stores only single data insertion for single user
    - Then we need to store the form data to table by passing the command to an object ie., ```object.save()``` if the user has "GET" request then the object is to be passed for the form in dictioanry format as previous discussed in above topics.
-   - Finally the views.py will have function such as shoen below
+   - Finally the views.py will have function such as shown below
      #### ```views.py```
      ```python
      def profiledetails(request,id):
@@ -129,4 +129,5 @@
         m = ProfileForm()
         return render(request,'userprofile/profile.html',{'pf':m})
      ```        
-   
+     #### ```Screenshot views.py```
+     
