@@ -56,9 +56,34 @@
      
    - After making migrations and migrate we can observe the tablenames with fields in **phpmyadmin** as shown below 
      #### ```Screenshot of model class with field names```
- 
+     <img src="modelinxampp.JPG" alt="model creation in xampp" height="280px" width="100%">
+   - In above figure it shows tablenames and fields but in field structure we are not creating id with type. while creating a model by default it creates **id** for all the tables here we are linking the first table to this specified table by using OneToOneField.
+   - The last field we are assuming is user in userdefined model but in mysql the filed is created as **user_id**. 'underscroll id' will attaches to every oneToOneField structure in models. 
  
 ---
 ### Creation of Form:
+   - While model creation is done in mysql then we are proceeding for ```form creation``` whatever the fields that we are going to display and to enter the values to the tables in particular field.
+   - We are aware of creating a form in our app that is created previously so in that we are going to create a new class (i.e., as userdefined names here we are creating the form name as **ProfileForm**) for our newly created model class.
+   - Before proceeding to create a class for userdefined form first we need to import the created model class to here for importing the model from model to form we are using ```from django.models import ModelForm``` so here whatever the model we are giving for that we are creating a form so we need to import the ```ModelForm```
+   - After importing we need to import the model class also for which model we are going to create a form. so for accessing that model we are importing as ```from userapp.models import modelname``` here the userapp is your app name whatever we had created previously and the model class name is just created in the ```models.py``` file.
+   - Finally the importing in forms.py looks like below.
+     #### ```forms.py``` 
+     ``` python
+     from django.models import ModelForm
+     from userprofile.models import Profile_details
+     ```
+   - So we need to create a userform class for inputting the specified values to models.
+     #### ```forms.py```
+     ``` python
+     class ProfileForm(ModelForm):
+         class Meta:
+             model = Profile_details
+             fields = ['age','phone','salary']
+     ```
+   - In above code implementation we are not using **id** and **user_id** because it ishould be automatically set to their default states such as **id** is primary key in the table and **user_id** is foreign key that should be inserted automatically when specific user is logged into their profile. 
+   - We are not using **__ all __** because we should not enter the id and user_id field values if we are assiging as **__ all __** in fields we need to select the user when the form is displaying. so it creates a duplicates for all the users so we can't specify user details when searching in database tables.
+   - Finally the forms.py looks like below shown figure
+     #### ```forms.py```
+      
     
   
