@@ -83,15 +83,16 @@
    - In above code implementation we are not using **id** and **user_id** because it ishould be automatically set to their default states such as **id** is primary key in the table and **user_id** is foreign key that should be inserted automatically when specific user is logged into their profile. 
    - We are not using **__ all __** because we should not enter the id and user_id field values if we are assiging as **__ all __** in fields we need to select the user when the form is displaying. so it creates a duplicates for all the users so we can't specify user details when searching in database tables.
    - Finally the forms.py looks like shown below.
-     #### ```forms.py```
+     #### ```Screenshot forms.py```
       <img src="forms.JPG" alt="forms" height="280px" width="100%"> 
   ---  
   ### Creation of URLs:
    - After completing the ```models.py``` and ```forms.py``` we are going to implement URL for which url we are accessing the form. so previuosly we are aware of creating a url for other models or functions to redirect through .htmls first we need to pass url for particular function that can be performing with some operations.
-    #### ```urls.py```
-    ``` python
-    path('profile/',views.profiledetails,name="profile")
-    ```
+     #### ```urls.py```
+     ``` python
+     path('profile/',views.profiledetails,name="profile")
+     ```
    - In url path we know the path parameters such as first parameter is url that can be typed in browser to view second parameter is function that can be implemented in ```views.py``` and the last parameter is name that can be accessed wherever the url should be called for redirection.
    - finally the ```urls.py``` will be looks like shown below
-   
+     #### ```Screenshot Urls.py```
+     <img src="urls.JPG" alt="urls" height="280px" width="100%">
