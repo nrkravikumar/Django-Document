@@ -108,5 +108,15 @@
    - From importing we already imported the userform(i.e., Uform) that is already imported previously so we are including along with same path for importing the **ProfileForm** to display it in .html file and to post the data to a model.
      #### ```Screenshot of importing model and form class in views.py```
      <img src="viewsimport.JPG" alt="viewsimporting" height="280px" width="100%">
-   - Now we are going to create a function (i.e., 
+   - Now we are going to create a function (i.e.,profiledetails) in that we are passing two parameters that is **request** from user and **id** which user is to be updating his/her record. So if the user is not updated these given form details then the form has to be visible if user is inserted then the form can be dispayed as updated form.
+   - By passing those details from user i.e., **id** that should match from the previous table **id** (i.e., user logged in id). Then we are going to implement logic to insert the data to the form first we need to access the first table objects that should be stored in an object.
+   - After storing the first table values in object then we are going to check whether the request is either "GET" or "POST". If the request is "GET" then we need to update those fields or else it is in "POST" format. If we are storing those data by using the Modelform with a variable so we need to check whether it is a valid data or not.
+   - If the data is valid or not we need to use ```is_valid()``` if it is valid then we are accessing another object to store it because we are storing only "age,phone,salary" including that fields we are assigning the linking from previous table so we already created another field with "OneToOneField" i.e., ```user```.
+   - In present table it can creates as user_id for that we are not filling any data to it for that we are pausing the saving data to table. we need to link ```id``` from User table and ```user_id``` from present table then it stores only single data insertion for single user
+   - Then we need to store the form data to table by passing the command to an object ie., ```object.save()``` if the user has "GET" request then the object is to be passed for the form in dictioanry format as previous discussed in above topics.
+   - Finally the views.py will have function such as shoen below
+     #### ```views.py```
+     ```python
+     def profiledetails(request,id):
+        
    
