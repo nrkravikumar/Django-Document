@@ -107,5 +107,6 @@
      ```
    - From importing we already imported the userform(i.e., Uform) that is already imported previously so we are including along with same path for importing the **ProfileForm** to display it in .html file and to post the data to a model.
      #### ``` Screenshot of importing model and form class in views.py```
+     <img src="viewsimport.JPG" alt="viewsimporting" height="280px" width="100%">
     
    
