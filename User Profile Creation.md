@@ -98,7 +98,7 @@
      <img src="urls.JPG" alt="urls" height="280px" width="100%">
   ---
   ### Creation of Function in Views:
-   - Here we are creating a function in views.py we know that how we are going to create a fucntion in views after completion of creating model in ```models.py``` and form in ```forms.py```.
+   - Here we are creating a function in views.py we know that how we are going to create a function in views after completion of creating model in ```models.py``` and form in ```forms.py```.
    - In views first we need to import our **model class** and **form class** after importing then we can proceed for creating a function because we need to access those model class for getting **id** from User table that is created earlier. Form class is used to insert the values to our model getting from the user end(i.e., entering data in .html file)
      #### ```Importing model and form class in view.py```
      ```python
@@ -141,4 +141,9 @@
      #### ```Screenshot browser url```
      <img src="browserurl.JPG" alt="browserurl" height="370px" width="100%">
    - After insertion of some data from particular fields that can be inserted into tables in mysql so we can check those fields with id in User table and user_id in profile_details table
-     #### ```Screenshot of user table and profiledetails table```
+     #### ```Screenshot of user table```
+     <img src="usertable.JPG" alt="usertable" height="280px" width="100%">
+   - In the above figure we can observe thar each user has id these id's are to be linking with another table(i.e., profile_details) so in profile_details table can be interlinked with user_id as discussed earlier from user table ids are exists only one time in the profiledetails table it doesnt repeats for again see the below figure for profieldetails table screenshot.
+     #### ```Screenshot of profiledetails table``` 
+     <img src="profiletable.JPG" alt="profiletable" height="280px" width="100%">
+    ---
