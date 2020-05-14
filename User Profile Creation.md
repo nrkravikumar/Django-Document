@@ -130,4 +130,4 @@
         return render(request,'userprofile/profile.html',{'pf':m})
      ```        
      #### ```Screenshot views.py```
-     
+     <img src="viewsfunction.JPG" alt="viewsfunction" height="280px" width="100%">
