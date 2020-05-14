@@ -130,12 +130,12 @@
         return render(request,'userprofile/profile.html',{'pf':m})
      ```        
      #### ```Screenshot views.py```
-     <img src="viewsfunction.JPG" alt="viewsfunction" height="280px" width="100%">
+     <img src="viewsfunction.JPG" alt="viewsfunction" height="350px" width="100%">
   ---
   ### creation of .html:
    - For creation of .html we know that we are creating .html in templates folder as discussed earlier in the topics so here we are creating .html file inside the templates with userapplication that user is created so here we are assuming the .html(i.e., profile.html) in that we are displaying the form fields as per our discussion earlier in forms.py
      #### ```Screenshot of Profile.html```
-     <img src="profilepage.JPG" alt="profilehtmlpage" height="300px" width="100%">
+     <img src="profilepage.JPG" alt="profilehtmlpage" height="380px" width="100%">
    - Previous picture states the profile page we are implemented using bootstrap and template language as we know the basic of those here we are not using any label names and form inputs because we are getting those labelnames and input fields through the model form as we mentioned earlier i.e., in ```forms.py```.
    - We are not giving any action to the form because the form values are to be redirected to the model so this is the logic we are implemented in the ```views.py```
    - The profile.html should be displayed when user is authenticated and then if user has to enter those details for one time and if needed then user has to update those details by user decision.
@@ -157,8 +157,8 @@
      <img src="homeoutput.JPG" alt="homeoutput" height="280px" width="100%">
    - Already we are aware of the profiledetails fields here the output is not displayed because the user didnt insert the record fields so after updation the details such as age is displayed in the age area.
      #### ```Screenshot of inserting the value to profile details field```
-     <img src="insertionvalues.JPG" alt="insertionvalue" height="280px" width="100%">
-   -Final output of user profile with ```OneToOneField```.
+     <img src="insertionvalues.JPG" alt="insertionvalue" height="300px" width="100%">
+   - Final output of user profile with ```OneToOneField```.
      #### ```Screenshot of Final Output in home page```
      <img src="profileoutput.JPG" alt="profileoutput" height="280px" width="100%">
    - Atlast we got output for the age field so the onetoonefield for profile is created then we can proceed for update of a user fields. So we need to enter or insert one record for these profile details table then we can update those data fields in the table. Now we can proceed for imageuploads,date of birth etc., fields to profile details table. 
