@@ -139,4 +139,4 @@
    - This profile page link can be displayed in navbar of site so while clicking on it it redirects with profile and id with it in url we can observe that profile with id so whoever the user is logged in and clicked the update link it displays it in url of the site.
      
      #### ```Screenshot browser url```
-     
+     <img src="browserurl.JPG" alt="browserurl" height="370px" width="100%">
