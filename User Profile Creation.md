@@ -84,7 +84,7 @@
    - We are not using **__ all __** because we should not enter the id and user_id field values if we are assiging as **__ all __** in fields we need to select the user when the form is displaying. so it creates a duplicates for all the users so we can't specify user details when searching in database tables.
    - Finally the forms.py looks like shown below.
      #### ```Screenshot forms.py```
-      <img src="forms.JPG" alt="forms" height="280px" width="100%"> 
+      <img src="formsimport.JPG" alt="forms" height="280px" width="100%"> 
   ---  
   ### Creation of URLs:
    - After completing the ```models.py``` and ```forms.py``` we are going to implement URL for which url we are accessing the form. so previuosly we are aware of creating a url for other models or functions to redirect through .htmls first we need to pass url for particular function that can be performing with some operations.
